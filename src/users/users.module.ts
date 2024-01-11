@@ -11,5 +11,6 @@ import { SequelizeModule } from "@nestjs/sequelize";
   providers: [UsersService],
   controllers: [UsersController],
   imports: [SequelizeModule.forFeature([User, Role, UserRoles]), RolesModule],
+  exports: [UsersService],
 })
 export class UsersModule {}
