@@ -2,11 +2,11 @@ import { User } from "./users/users.model";
 import { Role } from "./roles/roles.model";
 import { Module } from "@nestjs/common";
 import { UserRoles } from "./roles/user-roles.model";
+import { AuthModule } from "./auth/auth.module";
 import { RolesModule } from "./roles/roles.module";
 import { UsersModule } from "./users/users.module";
 import { ConfigModule } from "@nestjs/config";
 import { SequelizeModule } from "@nestjs/sequelize";
-import { AuthModule } from './auth/auth.module';
 
 @Module({
   controllers: [],

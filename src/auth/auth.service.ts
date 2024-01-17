@@ -4,9 +4,9 @@ import { JwtService } from "@nestjs/jwt";
 import { UsersService } from "src/users/users.service";
 import { CreateUserDto } from "src/users/dto/create-user.dto";
 import {
-  HttpException,
-  HttpStatus,
   Injectable,
+  HttpStatus,
+  HttpException,
   UnauthorizedException,
 } from "@nestjs/common";
 
